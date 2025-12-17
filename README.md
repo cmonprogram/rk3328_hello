@@ -16,7 +16,7 @@ sudo mkfs.ext4 /dev/mmcblk0p1
 ```
 sudo dd if=idbloader.img of=/dev/mmcblk0 seek=64        //contains U-Boot TPL (Tiny Program Loader) and U-Boot SPL (Secondary Program Loader)
 sudo dd if=u-boot.img of=/dev/mmcblk0 seek=16384        //main u-boot image for rk3328
-sudo dd if=u-boot.img of=/dev/hello.bin                 //program
+sudo dd if=hello.bin of=/dev/mmcblk0p1                  //program
 ```
 
 ### S4 Uboot load 
